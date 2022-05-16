@@ -2,10 +2,8 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardHeader from "@mui/material/CardHeader";
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
-import StarIcon from "@mui/icons-material/StarBorder";
 import Typography from "@mui/material/Typography";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
@@ -18,28 +16,6 @@ import { Link } from "react-router-dom";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { useTranslation } from "react-i18next";
-
-// const tiers = [
-//   {
-//     title: "LeoVegas",
-//     description: [
-//       "02/2022-04/2022",
-//       "Jobbade med ett projekt som heter Lemur vilket är en adminsida för att lägga till och ta bort spel.",
-//     ],
-//     teknik: [
-//       "JavaScript, React.Js, TypeScript, Material-UI och Styled-component",
-//     ],
-//   },
-
-//   {
-//     title: "Digitalpartner",
-//     description: [
-//       "11/2021-02/2022",
-//       "Utvecklande av en webshop för kund. Webshopen riktar sig in mot försäljning av kläder.",
-//     ],
-//     teknik: ["WordPress - Teman: Oxyen, - Flatsome. Html, Css och JavaScript"],
-//   },
-// ];
 
 const leoV = (
   <Box sx={{ m: 1 }} elevation={4}>
@@ -134,12 +110,6 @@ export default function Internship() {
                 },
               }}
             >
-              {/* <CardMedia
-                  component="img"
-                  src={require("../../image/ups-logo-transparent-4275.png")}
-                  alt="random"
-                  // sx={{ width: "200px" }}
-                /> */}
               <CardContent align={"center"} sx={{ flexGrow: 1 }}>
                 <Typography
                   sx={{ color: "#64ffda" }}
@@ -176,11 +146,6 @@ export default function Internship() {
                 },
               }}
             >
-              {/* <CardMedia
-                  component="img"
-                  image="https://source.unsplash.com/random"
-                  alt="random"
-                /> */}
               <CardContent align={"center"} sx={{ flexGrow: 1 }}>
                 <Typography
                   sx={{ color: "#64ffda" }}

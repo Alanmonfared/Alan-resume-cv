@@ -15,7 +15,7 @@ import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import DownloadIcon from "@mui/icons-material/Download";
 import Smoke from "../../media/blueSmoke.mp4";
-// import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
+
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
@@ -39,31 +39,23 @@ export default function Home() {
           width: "100%",
           height: "100%",
           left: "50%",
-          // right: "100%",
           top: "50%",
           transform: "translate(-50%,-50%)",
           objectFit: "cover",
           zIndex: "-1",
         }}
         autoPlay
-        // loop
         muted
       >
         <source src={Smoke} />
       </video>
-      {/* <Box component="div" animation="wave"> */}
       <ThemeProvider theme={theme}>
         <Box sx={{ padding: "0.5rem", zIndex: 1 }}>
           <Typography variant="h6" gutterBottom sx={{ color: "#64ffda" }}>
             {t("home_text")}
           </Typography>
 
-          <Typography
-            variant="h3"
-            
-            component="h1"
-            sx={{ color: "#ccd6f6" }}
-          >
+          <Typography variant="h3" component="h1" sx={{ color: "#ccd6f6" }}>
             {t("my_name", { name: userName })}
           </Typography>
 
@@ -100,15 +92,6 @@ export default function Home() {
           </Stack>
         </Box>
       </ThemeProvider>
-      {/* </Box> */}
-
-      {/*      
-      <ImgBox>
-        <img
-          src={require("../../image/imgbin_portable-network-graphics-desktop-smoke-png@2x.png")}
-          alt="logo"
-        />
-      </ImgBox> */}
     </ContainerHome>
   );
 }

@@ -4,10 +4,7 @@ import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
 import ArrowRightAltSharpIcon from "@mui/icons-material/ArrowRightAltSharp";
-// https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png
 import { useTranslation } from "react-i18next";
-
-import Stack from "@mui/material/Stack";
 import CircularProgress from "@mui/material/CircularProgress";
 
 const images = [
@@ -100,21 +97,8 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
     "& .nn": {
       display: "none",
     },
-    // "& .MuiTypography-root": {
-    //   border: "4px solid currentColor",
-    // },
   },
 }));
-
-const ImageSrc = styled("span")({
-  position: "absolute",
-  left: 0,
-  right: 0,
-  top: 0,
-  bottom: 0,
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center ",
-});
 
 const Image = styled("span")(({ theme }) => ({
   position: "absolute",
@@ -125,7 +109,6 @@ const Image = styled("span")(({ theme }) => ({
   display: "flex",
   alignItems: "end",
   justifyContent: "center",
-  //   backgroundColor: theme.palette.common.black,
 
   color: theme.palette.common.white,
   "&:hover": +{
@@ -142,16 +125,6 @@ const ImageBackdrop = styled("span")(({ theme }) => ({
   bottom: 0,
 
   opacity: 0.4,
-  transition: theme.transitions.create("opacity"),
-}));
-
-const ImageMarked = styled("span")(({ theme }) => ({
-  height: 1,
-  width: 18,
-  backgroundColor: theme.palette.common.white,
-  position: "absolute",
-  bottom: -2,
-  left: "calc(50% - 9px)",
   transition: theme.transitions.create("opacity"),
 }));
 
@@ -188,7 +161,6 @@ export default function ButtonBases() {
             width: { sm: "30%", md: "20%" },
           }}
         >
-          {/* <ImageSrc requier style={{ backgroundImage: `url(${image.url})` }} /> */}
           <img
             className="nn"
             alt={image.title}
@@ -211,13 +183,9 @@ export default function ButtonBases() {
                 sx={{
                   position: "relative",
                   color: "#ccd6f6",
-
-                  // pb: (theme) => `calc(${theme.spacing(1)} + 12px)`,
-                  // marginTop: { xs: "5rem", md: "block" },
                 }}
               >
                 {image.title}
-                {/* <ImageMarked className="MuiImageMarked-root" /> */}
               </Typography>
               <Box
                 sx={{
@@ -238,15 +206,7 @@ export default function ButtonBases() {
               </Box>
             </Box>
 
-            <Box
-              className="n"
-              // sx={{
-              //   display: "flex",
-              //   justifyContent: "center",
-              //   alignItems: "center",
-              //   marginTop: "8rem",
-              // }}
-            >
+            <Box className="n">
               <Typography
                 sx={{
                   color: "#8892b0",

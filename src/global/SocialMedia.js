@@ -15,7 +15,7 @@ const actions = [
   },
   {
     icon: <LinkedInIcon />,
-    name: "LinkdeIn",
+    name: "LinkedIn",
     href: "https://se.linkedin.com/in/alan-milad-monfared-b6683690",
   },
   {
@@ -42,7 +42,6 @@ export default function SocialMedia() {
           bottom: 50,
           left: { md: 35 },
           right: { xs: "calc(100% - 90px)", md: "auto" },
-          // display: { xs: "calc(25)", sm: "none", md: "block", lg: "block" },
         }}
       >
         <SpeedDial
@@ -65,41 +64,6 @@ export default function SocialMedia() {
           ))}
         </SpeedDial>
       </Box>
-
-      {/* <Box
-        sx={{
-          
-          "& > :not(style)": { m: 1 },
-          position: "fixed",
-          bottom: 0,
-          left: 0,
-          right: 0,
-
-          display: { md: "none", lg: "none", xl: "none" },
-        }}
-      >
-        <Fab
-          size="medium"
-          sx={{ backgroundColor: "transparent", color: "#fff" }}
-          aria-label="github"
-        >
-          <GitHubIcon />
-        </Fab>
-        <Fab
-          size="medium"
-          sx={{ backgroundColor: "transparent", color: "#fff" }}
-          aria-label="linkdin"
-        >
-          <LinkedInIcon />
-        </Fab>
-        <Fab
-          size="medium"
-          sx={{ backgroundColor: "transparent", color: "#fff" }}
-          aria-label="instagram"
-        >
-          <InstagramIcon />
-        </Fab>
-      </Box> */}
     </>
   );
 }
