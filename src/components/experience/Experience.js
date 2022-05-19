@@ -37,7 +37,7 @@ export default function Erfarenhet() {
               sx={{ color: "#8892b0" }}
               paragraph
             >
-              Här är några av mina tidigare anställningar.
+                {t("text_ex")}
             </Typography>
             <Stack
               sx={{ pt: 4 }}

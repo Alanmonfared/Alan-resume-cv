@@ -8,6 +8,9 @@ import Paper from "@mui/material/Paper";
 import { useTranslation } from "react-i18next";
 import { ImgBo } from "./Education.Styled";
 import ButtonBases from "./ButtonBases";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 const mdTheme = createTheme();
 
@@ -118,6 +121,22 @@ export default function Education() {
               </Paper>
             </Grid>
           </Grid>
+          <Stack
+            sx={{ pt: 4 }}
+            direction="row"
+            spacing={2}
+            justifyContent="center"
+          >
+            <Button to="/internship" component={Link} variant="contained">
+              {t("btn_internship")}
+            </Button>
+            <Button to="/experience" component={Link} variant="contained">
+              {t("btn_experience")}
+            </Button>
+            <Button to="/" component={Link} variant="outlined">
+              {t("btn_home")}
+            </Button>
+          </Stack>
 
           <Grid item xs={10} sm={12} lg={12}>
             <Box

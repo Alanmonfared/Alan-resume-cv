@@ -182,7 +182,7 @@ export default function Internship() {
       >
         <Box>
           <Typography sx={{ color: "#8892b0" }}>
-          Verktyg och teknologier LeoVegas:
+            {t("text_internShipLeo")}
           </Typography>
 
           <FormControlLabel
@@ -194,7 +194,7 @@ export default function Internship() {
         </Box>
         <Box>
           <Typography sx={{ color: "#8892b0" }}>
-          Verktyg och teknologier Digitalpartner:
+            {t("tex_intershipDigi")}
           </Typography>
 
           <FormControlLabel

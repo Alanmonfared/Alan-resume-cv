@@ -46,18 +46,15 @@ export default function Navbar() {
           }}
           maxWidth="xxl"
         >
-        <Link to="/">
-          
+          <Link to="/">
             <img
               src={require("../../image/{AM}.png")}
               alt="logo"
               style={{ paddingLeft: "1.5rem" }}
-             
-  
             />
-        </Link>
+          </Link>
           <Box sx={{ minWidth: 120 }}>
-            <FormControl fullWidth>
+            <FormControl sx={{ border: "0.1px solid #80bdff" }} fullWidth>
               <InputLabel
                 id="demo-simple-select-label"
                 sx={{ color: "#64ffda" }}
