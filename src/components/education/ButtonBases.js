@@ -30,6 +30,11 @@ const images = [
     level: 40,
   },
   {
+    url: "typescript",
+    title: "Typescript",
+    level: 30,
+  },
+  {
     url: "nodejs",
     title: "Node.js",
     level: 20,

@@ -96,7 +96,7 @@ export default function Navbar() {
                 >
                   <Avatar
                     alt="Alan Monfared"
-                    src={require("../../image/20180306_185151.jpg")}
+                    src={require("../../image/alan-2.jpg")}
                     sx={{ width: 98, height: 98 }}
                   />
                   <NavbarExtendLink>
@@ -205,8 +205,6 @@ const NavbarExtendLink = styled.li`
 
   &:hover {
     background-image: linear-gradient(to right, #000000 0%, #000000 50%);
-    /* padding-top: 2rem;
-    padding-bottom: 2rem; */
     -webkit-border-radius: 300px;
     -webkit-border-top-left-radius: 300px;
     border-radius: 300px;

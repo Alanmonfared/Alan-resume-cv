@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import { Typography } from "@mui/material";
-// import ImageListItemBar from "@mui/material/ImageListItemBar";
 
 export default function ImgList() {
   return (
