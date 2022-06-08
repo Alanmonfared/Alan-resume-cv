@@ -45,6 +45,7 @@ export default function Home() {
           zIndex: "-1",
         }}
         autoPlay
+        loop
         muted
       >
         <source src={Smoke} />
